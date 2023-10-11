@@ -11,5 +11,4 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
       <PhotosApp />
     </Provider>
 
-  </>,
-)
+  </>)
