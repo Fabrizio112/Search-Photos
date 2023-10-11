@@ -44,22 +44,24 @@ function PhotosApp() {
     }, [query])
 
     return (
-        <AppPhotosContainer >
-            <PrincipalTitle>Photos App </PrincipalTitle>
-            <SearchBar handleSearchBar={handleSearchBar} searchBar={searchBar} handleQuery={handleQuery} />
-            <FavoritePhotosCategory>
-                <ButtonCategory onClick={handleChangeQuery}>Food</ButtonCategory>
-                <ButtonCategory onClick={handleChangeQuery}>Technology</ButtonCategory>
-                <ButtonCategory onClick={handleChangeQuery}>Clothes</ButtonCategory>
-                <ButtonCategory onClick={handleChangeQuery}>Social Media</ButtonCategory>
-            </FavoritePhotosCategory>
-            <TitleResults>Results for {query} :</TitleResults>
-            <ContainerPhotos>
-                {search.length > 0 && search.map(photo => <Photo key={photo.id} src={photo.src.medium} alt={photo.alt} />)}
-                {loading && <h2>Cargando ...</h2>}
-            </ContainerPhotos>
-            <ButtonMorePhotos onClick={() => setPage(page + 1)}>View More</ButtonMorePhotos>
-        </AppPhotosContainer>);
+        <>
+            <AppPhotosContainer >
+                <PrincipalTitle>Photos App </PrincipalTitle>
+                <SearchBar handleSearchBar={handleSearchBar} searchBar={searchBar} handleQuery={handleQuery} />
+                <FavoritePhotosCategory>
+                    <ButtonCategory onClick={handleChangeQuery}>Food</ButtonCategory>
+                    <ButtonCategory onClick={handleChangeQuery}>Technology</ButtonCategory>
+                    <ButtonCategory onClick={handleChangeQuery}>Clothes</ButtonCategory>
+                    <ButtonCategory onClick={handleChangeQuery}>Social Media</ButtonCategory>
+                </FavoritePhotosCategory>
+                <TitleResults>Results for {query} :</TitleResults>
+                <ContainerPhotos>
+                    {search.length > 0 && search.map(photo => <Photo key={photo.id} src={photo.src.medium} alt={photo.alt} />)}
+                    {loading && <h2>Cargando ...</h2>}
+                </ContainerPhotos>
+                <ButtonMorePhotos onClick={() => setPage(page + 1)}>View More</ButtonMorePhotos>
+            </AppPhotosContainer>
+        </>);
 }
 
 export default PhotosApp;
