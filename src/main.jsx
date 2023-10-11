@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import "./assets/css/styles.css"
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.querySelector('#root')).render(
   <>
     <Provider store={store}>
       <PhotosApp />
