@@ -55,7 +55,7 @@ function PhotosApp() {
             <AppPhotosContainer >
                 <PrincipalTitle>Photos App </PrincipalTitle>
                 <SearchBar handleSearchBar={handleSearchBar} searchBar={searchBar} handleQuery={handleQuery} />
-                <FavoritePhotosCategory>
+                <FavoritePhotosCategory className="favorites-categories">
                     <ButtonCategory onClick={handleChangeQuery}>Food</ButtonCategory>
                     <ButtonCategory onClick={handleChangeQuery}>Technology</ButtonCategory>
                     <ButtonCategory onClick={handleChangeQuery}>Clothes</ButtonCategory>
