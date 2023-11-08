@@ -2,7 +2,7 @@
 
 ## <i align="center" style="font-size:2rem">📷 BUSCADOR DE FOTOS</i>
 
-En este proyecto se usaron hooks como **useState,useEffect** , tenologias como  **HTML,CSS,JavaScript,React, Styled Components** , para el manejo de estados **Redux** y otras herramientas como **FontAwesome**
+En este proyecto se usaron hooks como **useState,useEffect** , tenologias como  **HTML,CSS,JavaScript,React, Styled Components** , para el manejo de estados **Redux** y otras herramientas como **FontAwesome**.
 
  _Este proyecto fue construido con el proposito de practicar Redux_
 
